@@ -1,12 +1,10 @@
-<div class="dashboard-item">
-    <article>
-        <header>
-            <!-- [src] property binding (evaluated as ts) => image() : access signal -->
-            <img [src]="image().src" [alt]="image().alt" />
-            <h2>{{title()}}</h2>
-        </header>
+<article>
+    <header>
+        <!-- [src] property binding (evaluated as ts) => image() : access signal -->
+        <img [src]="image().src" [alt]="image().alt" />
+        <h2>{{title()}}</h2>
+    </header>
 
-        <!-- content projection : content to put between the <app-dashboard-item></app-dashboard-item> -->
-        <ng-content />
-    </article>
-</div>
+    <!-- content projection : content to put between the <app-dashboard-item></app-dashboard-item> -->
+    <ng-content />
+</article>
