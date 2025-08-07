@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    // Attribute selector : <button appButton>
-    selector: 'button[appButton]',
+    // Attribute selector : <button appButton> and <a appButton>
+    selector: 'button[appButton], a[appButton]',
     standalone: true,
     imports: [],
     templateUrl: './button.component.html',
